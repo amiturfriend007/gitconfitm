@@ -81,6 +81,9 @@ export class DeviceRecPage extends React.PureComponent {
                 var model=item.model;
                 var starRatings=item.starRatings;
                 var phoneImage=item.imageUrlHiRes;
+               // var brandsel=['Apple','Samsung'];
+                if (brand === 'Apple')
+                {
                 return(
              <div className="recommended-device span6 mH300 ng-scope">
              <div className="row span12 device-grid">
@@ -118,7 +121,10 @@ export class DeviceRecPage extends React.PureComponent {
         </div>
         </div>
        
-           )})
+           )
+        }
+        //else{}
+        })
         
         }</div>);
     
